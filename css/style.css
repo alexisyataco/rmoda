@@ -1,0 +1,165 @@
+.header {
+    /*background-image: url(/1.jpg);*/
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+}
+*{
+    margin: 0;/*el margen de los objetos se pega a los bordes*/
+    padding: 0;/*esconde las viñetas*/
+    box-sizing: border-box;
+}
+.header__texto{
+    text-align: center;
+    padding: 1%;
+}
+#txtbuscar{
+    font-family: 'Raleway', sans-serif;/*fuente importandad de google font*/
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;/*negrita*/
+
+}
+.header__navbar ul {
+    padding: 2rem;
+    list-style-type: none;
+    text-align: center;
+}
+.header__navbar li{
+    display: inline-block;/*me permite trabjar en linea y bloques*/
+}
+
+.header__navbar a{
+    text-decoration: none;
+    text-transform: uppercase;/*transforma el etxto de minusculas a mayusculas*/
+    background-color:black;/*fondo de caja de texto*/
+    color: white;/*color del texto*/
+    padding: 1rem; /*tamaño de la caja del texto*/
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;/*negrita*/
+    font-family: 'Raleway', sans-serif;/*fuente importanda de google font*/
+}
+.baner{
+    background-color: black;
+    line-height: 0;
+    width: 100%;/*procentaje del ancho del contenido*/
+    /*float: left;/*para flotar el contenido  a la izquierda*/
+    padding: 0;
+    border: solid black 1px;/*tipo de borde del panel*/
+    text-align: center;
+}
+.contenidooferta{
+    display: inline-block;
+    color:white;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;/*fuente importanda de google font*/
+    border: solid white 2rem;
+    background-color: darkviolet;
+    font-weight: 600;/*negrita*/
+    width: 100%;
+    font-size: 2rem;
+    padding: 2%;
+}
+/*.contenido {
+    background-color:blueviolet;
+    line-height: 1;
+    /*width: 70%;
+    padding: 1rem;
+}*/
+.contenido__titulo{
+    font-family: 'Raleway', sans-serif;/*fuente importanda de google font*/
+    /*position:absolute;*/
+    display: inline;
+    /*z-index: 1;*/
+    font-size: 1.5rem;
+    font-weight: 700;/*negrita*/
+    text-align: center;
+}
+.contenido__tituloo{
+    float:right;
+    display: inline;
+    font-size: 1.5rem;
+    font-weight: 700;/*negrita*/
+    text-align: center;
+}
+.contenedor__flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;  
+}
+.contenido img {
+    width: 100%;
+    padding: 0.5rem;
+    /*z-index: 1;/*es la posición de fondo o al frente, varia por su objetos de encima*/
+}
+.footer {
+    /*display: none;/*oculta lo que se ve en ese bloque, sirve para ocultar información (tablet, celular,etc)*/
+    background-color: rgba(32, 32, 32, 0.849);
+    /*clear: both;*/
+    color: white;
+    padding: 2rem;
+}
+.footer__flex {
+    display: flex;
+    flex-wrap: wrap;
+    /*corta las columnas hacia abajo*/
+    justify-content: space-around;
+    flex-direction: row;
+    /*alinea los elementos en forma vertical en una sola fila*/
+    /*flex-direction: column;/*alinea los elementos en forma horizontal en una sola columna*/
+    /*flex-items:stretch;se acomoda al espacio del panel*/
+    text-align: center;
+}
+.footer__menu {
+    list-style: none;
+    /*saca las viñetas*/
+
+    padding: 1rem;
+}
+
+.footer__flex h4 {
+    justify-content: space-around;
+}
+
+.footer__menu a {
+    color: white;
+    text-decoration: none;
+    /*saca el subrayado*/
+    padding: 1rem;
+}
+.footer__creditos {
+    font-size: 0.8rem;
+    text-align: center;
+    color: chartreuse;
+}
+.enlace {
+    text-decoration: none;    /*saca el subrayado*/
+    color:white;
+    font-size: 0.8rem;
+}
+.contenidomarcas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:baseline;
+    flex-direction: column;
+    border:solid;
+}
+.contenidomarcas__marcas ul{
+    padding: 1rem;
+    list-style-type: none;
+}
+.contenidomarcas__marcas a{
+    text-decoration: none;
+    text-transform: uppercase;/*transforma el etxto de minusculas a mayusculas*/
+    background-color:red;/*fondo de caja de texto*/
+    color: white;/*color del texto*/
+    padding: 0.8rem; /*tamaño de la caja del texto*/
+    font-size: 0.8rem;
+    font-weight: 600;/*negrita*/
+    font-family: 'Raleway', sans-serif;/*fuente importanda de google font*/
+}
