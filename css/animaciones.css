@@ -1,0 +1,56 @@
+/*animaciones*/
+.animacion {
+    /*color:blueviolet;*/
+    /* font-size:  100px;*/
+    /*NOMBRE*/
+    animation-name: efecto;
+    /* VECES QUE SE EJECUTA */
+    animation-iteration-count: infinite;
+    /* DURACION*/
+    animation-duration: 4s;
+    /* TIEMPO QUE TARDA HASTA QUE CARGA */
+    animation-delay: 1s;
+}
+
+@keyframes efecto {
+    /*0% {
+        color: blueviolet
+    }
+    25% {
+        color: blue
+    }
+    50% {
+        color: rgb(55, 37, 71)
+    }
+    75% {
+        color:aqua
+    }
+    100% {
+        color: rgb(46, 102, 185)
+    }*/
+}
+
+.header__barradelivery h2:hover{
+    display: inline-block;
+    animation: heartBeat;
+    animation-duration: 3s; 
+}
+.textodelivery-1:hover{
+    color:white
+}
+.textodelivery-2:hover{
+    color:white
+}
+.nav-item:hover {
+    font-weight: bold;
+}
+.texto__logomoda:hover{
+    display: inline-block;
+    animation: swing;
+    animation-duration: 1s; 
+}
+.carrusel__grid__tarjetas img:hover{
+   /* display: inline-block;*/
+    animation: bounce;
+    animation-duration: 1s; 
+}

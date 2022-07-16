@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.border {
+    border: 1px solid black;
+}
+/*BLOQUE 1 BANNER DELIVERY-NAV*/
+
+.header__grid {
+    display: grid;
+    /*dimensiones explicitas*/
+    /*para que todas tengan el mismo tamaño: repeat(12, 1fr)*/
+    /* grid-template-rows: 50px 2fr;/*eje de las filas vertical*/
+    /* grid-template-columns: 50px 50px ;*/
+    /* grid-template-columns: 300px 100px;/*eje de las columnas horizontal*/
+
+    grid-template-areas:
+        "header__barradelivery header__barradelivery"
+        "header__logoprincipal header__navprincipal";
+    grid-template-rows: 45px 60px;
+    grid-template-columns: auto auto;
+    /*grid-column-gap: 20px;*/
+    grid-row-gap: 10px;
+}
+.container-fluid{
+    background-color: white;
+}
+.contenedor__tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.d-flex__textobusqueda {
+    width: auto;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.d-flex__textobusqueda input#search {
+    width: 250px;
+    height: 40px;
+    float: left;
+
+    padding-left: 50px;
+    /*donde inicia el texto pasando el icon*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.d-flex__textobusqueda .icon {
+    position: absolute;
+    top: 10%;
+    margin-left: 17px;
+    margin-top: 7px;
+    z-index: 1;
+}
+
+.iconbusqueda {
+    width: 25px;
+}
+
+.logomoda {
+    width: 50px;
+    margin: 10px;
+}
+
+.logoprincipal {
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    grid-area: logoprincipal;
+}
+
+.header__barradelivery {
+    background: linear-gradient(to right, darkorchid, deeppink);
+    height: 90%;
+    grid-area: header__barradelivery;
+}
+
+.header__navprincipal {
+    grid-area: header__navprincipal;
+}
+
+.barradelivery__flex {
+    display: flex;
+    flex-wrap:nowrap;
+    /*corta las columnas hacia abajo*/
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+}
+.textodelivery-1 {
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.textodelivery-2 {
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
+.img__delivery {
+    height: 30px;
+}
+
+/*BLOQUE 2 CARUSEL-TARJETA OFERTA DEL MES*/
+.carrusel__grid {
+    display: grid;
+    /*justify-items:normal;*/
+    grid-template-areas:
+        "carrusel__grid__img"
+        "carrusel__grid__tarjetas"
+        "carrusel__grid__ofertames";
+    grid-template-rows: auto auto 60px ;
+    /*grid-template-columns: auto;*/
+    /*grid-column-gap: 20px;*/
+    grid-row-gap: 40px;
+}
+.carrusel__grid__img{
+    grid-area:carrusel__grid__img;
+}
+.carrusel__grid__tarjetas{
+    grid-area:carrusel__grid__tarjetas;
+}
+.carrusel__grid__ofertames{
+    grid-area:carrusel__grid__ofertames;
+    background:darkmagenta;
+}
+.carousel-inner p{
+    font-size: 12px;
+    font-style: italic;
+    color: black;
+}
+.carrusel__grid__tarjetas__flex{
+    display: flex;
+    flex-wrap:nowrap;
+    /*corta las columnas hacia abajo*/
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+
+}
+
+/*FOOTER*/
+.footer {
+    /*display: none;/*oculta lo que se ve en ese bloque, sirve para ocultar información (tablet, celular,etc)*/
+    background-color: rgba(32, 32, 32, 0.849);
+    /*clear: both;*/
+    color: white;
+    padding: 2rem;
+}
+
+.footer__flex {
+    display: flex;
+    flex-wrap: wrap;
+    /*corta las columnas hacia abajo*/
+    justify-content: space-around;
+    flex-direction: row;
+    /*alinea los elementos en forma vertical en una sola fila*/
+    /*flex-direction: column;/*alinea los elementos en forma horizontal en una sola columna*/
+    /*flex-items:stretch;se acomoda al espacio del panel*/
+    text-align: center;
+}
+
+.footer__menu {
+    list-style: none;
+    /*saca las viñetas*/
+    padding: 1rem;
+}
+
+.footer__flex h4 {
+    justify-content: space-around;
+}
+
+.footer__menu a {
+    color: white;
+    text-decoration: none;
+    /*saca el subrayado*/
+    padding: 1rem;
+}
+
+.footer__creditos {
+    font-size: 0.8rem;
+    text-align: center;
+    color: chartreuse;
+}
