@@ -21,7 +21,7 @@
         "header__barradelivery header__barradelivery"
         "header__logoprincipal header__navprincipal";
     grid-template-rows: 45px 60px;
-    grid-template-columns: auto auto;
+    grid-template-columns:auto auto;
     /*grid-column-gap: 20px;*/
     grid-row-gap: 10px;
 }
