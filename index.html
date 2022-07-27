@@ -10,6 +10,7 @@
   <meta name="currency" content="S/.">
   <meta name="language" content="es-PE">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/query.css">
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="css/animaciones.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,216 +25,281 @@
 </head>
 
 <body>
-  <header class="header__grid">
+  <div class="content__grid">
     <!--CABECERA DE BARRA DE DELIVERY/ -->
-    <div class="header__barradelivery barradelivery__flex">
-      <div class="header__barradelivery__textodelivery-1">
-        <h2><a class="textodelivery-1" href="index.html"> Delivery 24Horas </a><img class="img__delivery"
-            src="/Assets/Iconos/img/clock.png" /></h2>
+    <header class="header__grid">
+      <div class="header__barradelivery barradelivery__flex">
+        <div class="header__barradelivery__textodelivery-1">
+          <h2><a class="textodelivery-1" href="index.html"> Delivery 24Horas </a><img class="img__delivery"
+              src="/Assets/Iconos/img/clock.png" /></h2>
+        </div>
+        <div class="header__barradelivery__textodelivery-2">
+          <h2><a class="textodelivery-2" href="index.html"> por compras mayores de $100.00</a></h2>
+        </div>
       </div>
-      <div class="header__barradelivery__textodelivery-2">
-        <h2><a class="textodelivery-2" href="index.html"> por compras mayores de $100.00</a></h2>
-      </div>
-
-    </div>
+    </header>
     <!-- MENU LOGO/NAV/TEXTO-->
-    <div class="header__logoprincipal">
-      <img src="/Assets/Img/logomoda.png" alt="" class="logoprincipal">
-    </div>
-    <nav class="navbar navbar-expand-lg bg-light header__navprincipal">
-      <div class="container-fluid">
-        <h1 class="texto__logomoda"><img src="Assets/Img/logomoda.png" alt="" class="logomoda" /></h1>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Inicio</a> </li>
-            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="views/marcas.html">Marcas</a>
-            </li>
-            <li class="nav-item"> <a class="nav-link active" aria-current="page"
-                href="views/promociones">Promociones</a> </li>
-            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="categoria.html">Categoria</a>
-            </li>
-            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="moda.html">Nosotros</a> </li>
-            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="Contacto.html">Contáctanos</a>
-            </li>
+    <section class="menu__grid">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <h1 class="texto__logomoda"><img src="Assets/Img/logomoda.png" alt="" class="logomoda" /></h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Inicio</a> </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="views/marcas.html">Marcas</a>
+              </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page"
+                  href="views/promociones">Promociones</a> </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="categoria.html">Categoria</a>
+              </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="moda.html">Nosotros</a> </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="Contacto.html">Contáctanos</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <div class="d-flex__textobusqueda">
+                <img src="https://img.icons8.com/small/16/000000/search--v1.png" class="iconbusqueda icon" />
+                <input type="search" class="form-control" list="datalistOptions" id="search"
+                  placeholder="Búsqueda..." />
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="carrusel__grid">
+      <div class="carrusel__grid__img">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="index.html"><img src="Assets/Img/baner1.jpg" class="d-block w-100" alt=""></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+                <p>*Promoción válida del 10 al 25 de julio en productos seleccionado. Stock mínmo 5 unidades.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="views/marcas.html"><img src="Assets/Img/baner4.jpg" class="d-block w-100" alt=""></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+                <p>*Promoción válida del 11 al 25 de julio en productos seleccionado. Stock mínmo 3 unidades.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="views/categoria.html"><img src="Assets/Img/baner3.jpg" class="d-block w-100" alt=""></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+                <p>*Promoción válida del 11 al 25 de julio en productos seleccionado. Stock mínmo 2 unidades.</p>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+    </section>
+    <section class="envio__grid">
+      <div class="envio__flex d-flex">
+
+        <div class="card mb-3 border border-primary shadow p-3 mb-5 bg-body rounded">
+          <img src="Assets/Iconos/img/seguimiento.png" class="card-img-top" alt="...">
+          <div class="card-body ">
+            <h5 class="card-title">Seguimiento de pedido</h5>
+            <p class="card-text"><small class="text-muted">Consulta el estado de tu pedido.</small></p>
+          </div>
+        </div>
+        <div class="card mb-3 border border-success shadow p-3 mb-5 bg-body rounded">
+          <img src="Assets/Iconos/img/salud.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bioseguridad</h5>
+            <p class="card-text"><small class="text-muted">Conoce nuestros procolocos de Salud.</small></p>
+          </div>
+        </div>
+        <div class="card mb-3 border border-danger shadow p-3 mb-5 bg-body rounded">
+          <img src="Assets/Iconos/img/devolucion.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Devoluciones</h5>
+            <p class="card-text"><small class="text-muted">Solicita un proceso de devolución.</small></p>
+          </div>
+        </div>
+        <div class="card mb-3 border border-warning shadow p-3 mb-5 bg-body rounded">
+          <img src="Assets/Iconos/img/gps.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ubícanos</h5>
+            <p class="card-text"><small class="text-muted">Conoce nuestras sucursales.</small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="titulocategorias__grid">
+
+      <h2> <img src="Assets/Iconos/img/categorias.png" /> Nuestras Categorias</h2>
+    </section>
+
+    <section class="catego__grid ">
+      <div class="catego__grid__grid container">
+        <div class="item1">
+          <a href=""><img src="Assets/Img/Item_1.png" alt=""></a>
+        </div>
+        <div class="item2">
+          <a href=""><img src="Assets/Img/item_2.png" alt="" class="img-fluid"></a>
+        </div>
+        <div class="item3">
+          <a href=""><img src="Assets/Img/item_3.png" alt="" class="img-fluid"></a>
+        </div>
+        <div class="item4">
+          <a href=""><img src="Assets/Img/item_4.png" alt="" class="img-fluid"></a>
+        </div>
+        <div class="item5">
+          <a href=""><img src="Assets/Img/item_5.png" alt="" class="img-fluid"></a>
+        </div>
+        <div class="item6">
+          <a href=""> <img src="Assets/Img/item_6.png" alt="" class="img-fluid"></a>
+        </div>
+        <div class="item7">
+          <a href=""><img src="Assets/Img/item_7.png" alt="" class="img-fluid"></a>
+        </div>
+        <div class="item8">
+          <a href=""><img src="Assets/Img/item_8.png" alt="" class="img-fluid"></a>
+        </div>
+        <div class="item9">
+          <a href=""><img src="Assets/Img/item_9.png" alt="" class="img-fluid"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="propaganda__grid">
+      <div class="propaganda">
+        <img src="Assets/Img/propaganda1.png" />
+        <h3 class="texto__propaganda-2">Entregas en</h3>
+        <h4 class="texto__propaganda-1">24 Horas, haz tu pedido!</h4>
+      </div>
+    </section>
+
+    <section class="titulomarcas__grid">
+      <h2> <img src="Assets/Iconos/img/categorias.png" /> Marcas Exclusivas</h2>
+    </section>
+    <section class="marcas__grid">
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="Assets/Img/marcas/marca1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="Assets/Img/marcas/marca2.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="Assets/Img/marcas/marca3.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="Assets/Img/marcas/marca4.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="Assets/Img/marcas/marca5.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="Assets/Img/marcas/marca6.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="Assets/Img/marcas/marca7.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="Assets/Img/marcas/marca1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="Assets/Img/marcas/marca3.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="Assets/Img/marcas/marca5.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="Assets/Img/marcas/marca7.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="Assets/Img/marcas/marca2.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="Assets/Img/marcas/marca4.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="Assets/Img/marcas/marca6.png" alt="" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer__grid">
+      <div class="footer__flex">
+        <div>
+          <h4>Nuestro sitio</h4>
+          <ul class="footer__menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Marcas</a></li>
+            <li><a href="#">Promociones</a></li>
+            <li><a href="#">Categoria</a></li>
+            <li><a href="views/moda.html">Moda</a></li>
           </ul>
-          <form class="d-flex" role="search">
-            <div class="d-flex__textobusqueda">
-              <img src="https://img.icons8.com/small/16/000000/search--v1.png" class="iconbusqueda icon" />
-              <input type="search" class="form-control" list="datalistOptions" id="search" placeholder="Búsqueda..." />
-            </div>
-          </form>
-        </div>
-      </div>
-    </nav>
-
-  </header>
-  <div class="carrusel__grid">
-    <div class="carrusel__grid__img">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="index.html"><img src="Assets/Img/baner1.jpg" class="d-block w-100" alt=""></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5></h5>
-              <p>*Promoción válida del 10 al 25 de julio en productos seleccionado. Stock mínmo 5 unidades.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="views/marcas.html"><img src="Assets/Img/baner4.jpg" class="d-block w-100" alt=""></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5></h5>
-              <p>*Promoción válida del 11 al 25 de julio en productos seleccionado. Stock mínmo 3 unidades.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="views/categoria.html"><img src="Assets/Img/baner3.jpg" class="d-block w-100" alt=""></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5></h5>
-              <p>*Promoción válida del 11 al 25 de julio en productos seleccionado. Stock mínmo 2 unidades.</p>
-            </div>
-          </div>
-
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-    <div class="carrusel__grid__tarjetas">
-      <div class="carrusel__grid__tarjetas__flex">
-        <div class="card-1">
-          <div class="card mb-3" style="max-width: 300px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="Assets/Iconos/img/seguimiento.png" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Seguimiento de Pedido.</h5>
-                  <p class="card-text"><small class="text-muted">Verifica el estado de tu pedido.</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-2">
-          <div class="card mb-3" style="max-width: 300px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="Assets/Iconos/img/devolucion.png" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Devolución de pedido.</h5>
-                  <p class="card-text"><small class="text-muted">Realiza una devolución de tus productos.</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-3">
-          <div class="card mb-3" style="max-width: 300px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="Assets/Iconos/img/salud.png" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Medidas de bioseguridad.</h5>
-                  <p class="card-text"><small class="text-muted">Infórmate todo los procedimientos.</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-4">
-          <div class="card mb-3" style="max-width: 300px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="Assets/Iconos/img/gps.png" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Ubicación de sucursales.</h5>
-                  <p class="card-text"><small class="text-muted">Conoce todas nuestras sedes.</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carrusel__grid__ofertames">
-      <div class="ofertames__flex">
-
-      </div>
-    </div>
-
-  </div>
-  <footer id="abajo" class="footer">
-    <div class="footer__flex">
-        <div>
-            <h4>Nuestro sitio</h4>
-            <ul class="footer__menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Marcas</a></li>
-                <li><a href="#">Promociones</a></li>
-                <li><a href="#">Categoria</a></li>
-                <li><a href="views/moda.html">Moda</a></li>
-            </ul>
         </div>
         <div>
-            <h4>Sobre Moda</h4>
-            <ul class="footer__menu">
-                <li><a href="#">¿Cómo comprar en Moda.com?</a></li>
-                <li><a href="#">Guía de Compra</a></li>
-                <li><a href="#">Términos y condiciones</a></li>
-                <li><a href="#">Cambios y Devoluciones</a></li>
-                <li><a href="#">Base Legales</a></li>
-                <li><a href="#">Seguridad y Privacidad</a></li>
-                <li><a href="#">Seguimiento de Delivery</a></li>
-                <li><a href="#">Politicas de Datos</a></li>
-            </ul>              
+          <h4>Sobre Moda</h4>
+          <ul class="footer__menu">
+            <li><a href="#">¿Cómo comprar en Moda.com?</a></li>
+            <li><a href="#">Guía de Compra</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Cambios y Devoluciones</a></li>
+            <li><a href="#">Base Legales</a></li>
+            <li><a href="#">Seguridad y Privacidad</a></li>
+            <li><a href="#">Seguimiento de Delivery</a></li>
+            <li><a href="#">Politicas de Datos</a></li>
+          </ul>
         </div>
         <div>
-            <h4>Más de Moda</h4>
-            <ul class="footer__menu">
-                <li><a href="#">Tipos de Pago</a></li>
-                <li><a href="#">¿Quienes Somos?</a></li>
-                <li><a href="#">Nuestra Tiendas Virtual</a></li>
-                <li><a href="#">Trabaja con Nosotros</a></li>
-                <li><a href="#">comprobantes Electrónicos</a></li>
-                <li><a href="#">Reporte de sostenibilidad</a></li>
-                <li><a href="#">Libro de Reclamaciones</a></li>
-                <li><a href="#">Reclamos</a></li>
-            </ul>
+          <h4>Más de Moda</h4>
+          <ul class="footer__menu">
+            <li><a href="#">Tipos de Pago</a></li>
+            <li><a href="#">¿Quienes Somos?</a></li>
+            <li><a href="#">Nuestra Tiendas Virtual</a></li>
+            <li><a href="#">Trabaja con Nosotros</a></li>
+            <li><a href="#">comprobantes Electrónicos</a></li>
+            <li><a href="#">Reporte de sostenibilidad</a></li>
+            <li><a href="#">Libro de Reclamaciones</a></li>
+            <li><a href="#">Reclamos</a></li>
+          </ul>
         </div>
-    </div>
-    <p><a href="#arriba" class="enlace">Subir</a></p>
-    <div class="footer__creditos">
+      </div>
+      <p><a href="#arriba" class="enlace">Subir</a></p>
+      <div class="footer__creditos">
         2022 &copy; Moda R, Elabroado por Luis Yataco - CoderHouse
-    </div>
+      </div>
 
-</footer>
+    </footer>
+  </div>
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

@@ -4,34 +4,27 @@
 
 }
 
-.border {
-    border: 1px solid black;
-}
 /*BLOQUE 1 BANNER DELIVERY-NAV*/
-
-.header__grid {
+.content__grid {
     display: grid;
-    /*dimensiones explicitas*/
-    /*para que todas tengan el mismo tamaño: repeat(12, 1fr)*/
-    /* grid-template-rows: 50px 2fr;/*eje de las filas vertical*/
-    /* grid-template-columns: 50px 50px ;*/
-    /* grid-template-columns: 300px 100px;/*eje de las columnas horizontal*/
-
     grid-template-areas:
-        "header__barradelivery header__barradelivery"
-        "header__logoprincipal header__navprincipal";
-    grid-template-rows: 45px 60px;
-    grid-template-columns:auto auto;
-    /*grid-column-gap: 20px;*/
-    grid-row-gap: 10px;
+        "header__grid"
+        "menu__grid"
+        "carrusel__grid"
+        "envio__grid"
+        "titulocategorias__grid"
+        "catego__grid"
+        "propaganda__grid"
+        "titulomarcas__grid"
+        "marcas__grid"
+        "footer__grid";
+    grid-template-rows: 45px 70px auto auto auto auto auto;
+    background: white;
+    /*grid-row-gap: 1px;*/
 }
-.container-fluid{
-    background-color: white;
-}
-.contenedor__tarjetas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
+.navbar {
+    z-index: 1000;
 }
 
 .d-flex__textobusqueda {
@@ -70,31 +63,58 @@
     margin: 10px;
 }
 
-.logoprincipal {
-    width: 100px;
-    padding: 0;
-    margin: 0;
-    grid-area: logoprincipal;
-}
-
-.header__barradelivery {
+.header__grid {
     background: linear-gradient(to right, darkorchid, deeppink);
     height: 90%;
-    grid-area: header__barradelivery;
+    grid-area: header__grid;
+
 }
 
-.header__navprincipal {
-    grid-area: header__navprincipal;
+.menu__grid {
+    grid-area: menu__grid;
+}
+
+.carrusel__grid {
+    padding: 10px;
+}
+
+.envio__flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.envio__flex img {
+    width: 45px;
+    align-items: center;
+    padding: 8px;
+}
+
+.card {
+    align-items: center;
+}
+
+.card-body {
+    padding: 4px !important;
+    text-align: center;
+}
+
+.card {
+    margin: 14px !important;
+}
+
+.card-img-top {
+    width: 50px;
 }
 
 .barradelivery__flex {
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     /*corta las columnas hacia abajo*/
     justify-content: space-around;
     flex-direction: row;
     align-content: center;
 }
+
 .textodelivery-1 {
     font-size: 26px;
     color: white;
@@ -108,55 +128,176 @@
     font-weight: normal;
     text-decoration: none;
 }
+
 .img__delivery {
     height: 30px;
 }
 
-/*BLOQUE 2 CARUSEL-TARJETA OFERTA DEL MES*/
-.carrusel__grid {
-    display: grid;
-    /*justify-items:normal;*/
-    grid-template-areas:
-        "carrusel__grid__img"
-        "carrusel__grid__tarjetas"
-        "carrusel__grid__ofertames";
-    grid-template-rows: auto auto 60px ;
-    /*grid-template-columns: auto;*/
-    /*grid-column-gap: 20px;*/
-    grid-row-gap: 40px;
+.titulocategorias__grid {
+    grid-area: titulocategorias__grid;
+    background: black;
+    color: white;
 }
-.carrusel__grid__img{
-    grid-area:carrusel__grid__img;
-}
-.carrusel__grid__tarjetas{
-    grid-area:carrusel__grid__tarjetas;
-}
-.carrusel__grid__ofertames{
-    grid-area:carrusel__grid__ofertames;
-    background:darkmagenta;
-}
-.carousel-inner p{
-    font-size: 12px;
-    font-style: italic;
-    color: black;
-}
-.carrusel__grid__tarjetas__flex{
-    display: flex;
-    flex-wrap:nowrap;
-    /*corta las columnas hacia abajo*/
-    justify-content: space-around;
-    flex-direction: row;
-    align-content: center;
 
+.titulocategorias__grid img {
+    width: 35px;
+}
+
+.titulocategorias__grid h2 {
+    text-align: center;
+    margin: 2px;
+}
+
+.catego__grid__grid img {
+    width: 100%;
+    height: 100%;
+}
+
+.catego__grid {
+    display: grid;
+    padding: 15px;
+}
+
+.catego__grid__grid {
+    display: grid;
+    padding: 4px;
+}
+
+.titulomarcas__grid {
+    grid-area: titulomarcas__grid;
+    background: rebeccapurple;
+    color: white;
+
+}
+
+.titulomarcas__grid img {
+    width: 35px;
+
+}
+
+.titulomarcas__grid h2 {
+    text-align: center;
+    margin: 2px;
+}
+
+/*carrusel de marcar*/
+
+
+
+@-webkit-keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+    ;
+
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.slider .slide {
+    height: 100px;
+    width: 250px;
+}
+
+.slide img {
+    width: 100px;
+}
+
+.slide-track {
+    padding: 20px;
+}
+
+/*propaganda*/
+
+.propaganda__grid img {
+    width: 100%;
+    height: 90%;
+
+}
+
+.propaganda {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.texto__propaganda-2 {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: xx-large;
+}
+
+.texto__propaganda-1 {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    padding: 15px;
+    font-size: 15px;
 }
 
 /*FOOTER*/
-.footer {
+.footer__grid {
     /*display: none;/*oculta lo que se ve en ese bloque, sirve para ocultar información (tablet, celular,etc)*/
     background-color: rgba(32, 32, 32, 0.849);
     /*clear: both;*/
     color: white;
     padding: 2rem;
+    grid-area: footer__grid;
 }
 
 .footer__flex {

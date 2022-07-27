@@ -41,6 +41,9 @@
 .textodelivery-2:hover{
     color:white
 }
+.footer__grid a:hover{
+    color:hotpink!important;
+}
 .nav-item:hover {
     font-weight: bold;
 }
@@ -52,5 +55,10 @@
 .carrusel__grid__tarjetas img:hover{
    /* display: inline-block;*/
     animation: bounce;
+    animation-duration: 1s; 
+}
+.catego__grid__grid img:hover{
+    display: inline-block;
+    animation: pulse;
     animation-duration: 1s; 
 }
