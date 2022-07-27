@@ -7,9 +7,7 @@
   .titulocategorias__grid img {
     width: 20px;
   }
-}
 
-@media(max-width: 992px) {
   .card {
     align-items: center;
   }
@@ -17,9 +15,15 @@
   .card h5 {
     font-size: 10px;
   }
-
   .card p {
+    display: none;
     font-size: 10px;
+  }
+  .envio__flex img{
+    width: 60px;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
   }
 }
 
@@ -78,8 +82,9 @@
 
 @media screen and (max-width:575px) {
   .slide-track {
-    width: 30px!important;
+    max-width: 30px!important;
   }
+
 }
 
 
@@ -108,4 +113,5 @@
   .catego__grid__grid img {
     width: 100%;
   }
+
 }
