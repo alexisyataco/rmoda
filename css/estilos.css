@@ -190,12 +190,10 @@ color: black;
     0% {
         transform: translateX(0);
     }
-
     100% {
         transform: translateX(calc(-250px * 7));
     }
 }
-
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -242,9 +240,7 @@ color: black;
     animation: scroll 40s linear infinite;
     display: flex;
     width: calc(250px * 14);
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+
 }
 
 .slider .slide {
@@ -254,6 +250,7 @@ color: black;
 
 .slide img {
     width: 100px;
+    padding: 60px;
 }
 
 .slide-track {
