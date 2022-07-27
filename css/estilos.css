@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-
 }
 
 /*BLOQUE 1 BANNER DELIVERY-NAV*/
@@ -180,9 +179,7 @@
     margin: 2px;
 }
 
-/*carrusel de marcar*/
-
-
+/*carrusel de marcas*/
 
 @-webkit-keyframes scroll {
     0% {
@@ -211,11 +208,8 @@
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 960px;
-    ;
-
+    width: 100%;
 }
-
 .slider::before,
 .slider::after {
     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
@@ -225,7 +219,6 @@
     width: 200px;
     z-index: 2;
 }
-
 .slider::after {
     right: 0;
     top: 0;

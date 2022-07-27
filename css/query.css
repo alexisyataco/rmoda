@@ -76,6 +76,13 @@
   }
 }
 
+@media screen and (max-width:575px) {
+  .slide-track {
+    width: 60px!important;
+  }
+}
+
+
 @media screen and (max-width: 767px) {
   .catego__grid__grid {
     display: grid;
@@ -102,4 +109,3 @@
     width: 100%;
   }
 }
-
