@@ -72,13 +72,15 @@
 .menu__grid {
     grid-area: menu__grid;
 }
-
-.carrusel__grid {
+.carrusel-item img{
     padding: 10px;
 }
-.p_legal{
-font-size:10px;
-color: black;
+.carrusel__grid__img {
+    padding: 1px;
+}
+.carrusel__grid img{
+    max-width: 100%;
+    padding: 10px;
 }
 .envio__flex {
     display: flex;
