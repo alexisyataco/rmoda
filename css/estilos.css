@@ -17,7 +17,7 @@
         "titulomarcas__grid"
         "marcas__grid"
         "footer__grid";
-    grid-template-rows: 45px 70px auto auto auto auto auto;
+    grid-template-rows: 45px 70px auto auto auto auto auto auto auto auto;
     background: white;
     /*grid-row-gap: 1px;*/
 }
@@ -66,25 +66,20 @@
     background: linear-gradient(to right, darkorchid, deeppink);
     height: 90%;
     grid-area: header__grid;
-
 }
 
 .menu__grid {
     grid-area: menu__grid;
 }
-.carrusel-item img{
-    padding: 10px;
-}
+
 .carrusel__grid__img {
     padding: 1px;
 }
 .carrusel__grid img{
-    max-width: 100%;
     padding: 10px;
 }
 .envio__flex {
-    display: flex;
-    
+    display: flex;    
     justify-content: space-evenly;
     padding: 2px;
 }
