@@ -173,7 +173,6 @@
 
 .titulomarcas__grid img {
     width: 35px;
-
 }
 
 .titulomarcas__grid h2 {
@@ -237,17 +236,16 @@
     animation: scroll 40s linear infinite;
     display: flex;
     width: calc(250px * 14);
-
 }
 
-.slider .slide {
+.slider .slidem {
     height: 100px;
     width: 250px;
 }
 
-.slide img {
+.slidem img {  
     width: 100px;
-    padding: 60px;
+    padding: 5px;
 }
 
 .slide-track {
