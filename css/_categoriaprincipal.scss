@@ -1,0 +1,27 @@
+.titulocategorias__grid {
+    grid-area: titulocategorias__grid;
+    background: black;
+    color: white;
+}
+.titulocategorias__grid img {
+    width: 35px;
+}
+.titulocategorias__grid h2 {
+    text-align: center;
+    margin: 2px;
+}
+
+.catego__grid__grid img {
+    width: 100%;
+    height: 100%;
+}
+
+.catego__grid {
+    display: grid;
+    padding: 15px;
+}
+
+.catego__grid__grid {
+    display: grid;
+    padding: 4px;
+}

@@ -1,0 +1,25 @@
+/*propaganda principal*/
+
+.propaganda__grid img {
+    width: 100%;
+    height: 90%;
+}
+.propaganda {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.texto__propaganda-2 {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: xx-large;
+}
+.texto__propaganda-1 {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    padding: 15px;
+    font-size: 15px;
+}

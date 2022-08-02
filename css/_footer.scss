@@ -1,0 +1,33 @@
+/*FOOTER*/
+.footer__grid {
+    grid-area: footer__grid;
+    background-color: rgba(32, 32, 32, 0.849);
+    color: white;
+    padding: 2rem;
+}
+.footer__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+}
+.footer__menu {
+    list-style: none;
+    padding: 1rem;
+}
+
+.footer__flex h4 {
+    justify-content: space-around;
+}
+.footer__menu a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.footer__creditos {
+    font-size: 0.8rem;
+    text-align: center;
+    color: chartreuse;
+}

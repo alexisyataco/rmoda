@@ -1,0 +1,90 @@
+/*BLOQUE 1 BANNER DELIVERY-NAV MENU*/
+
+@mixin texto_estilo($tamaño_texto) {
+    font-size: $tamaño_texto;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.textodelivery-1 {
+    @include texto_estilo(26px);
+}
+
+.textodelivery-2 {
+    @include texto_estilo(24px);
+}
+
+.content__grid {
+    display: grid;
+    grid-template-areas:
+        "header__grid"
+        "menu__grid"
+        "carrusel__grid"
+        "envio__grid"
+        "titulocategorias__grid"
+        "catego__grid"
+        "propaganda__grid"
+        "titulomarcas__grid"
+        "marcas__grid"
+        "footer__grid";
+    grid-template-rows: 45px 70px auto auto auto auto auto auto auto auto;
+    background: white;
+}
+.navbar {
+    z-index: 1000;
+}
+
+.d-flex__textobusqueda {
+    width: auto;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.d-flex__textobusqueda input#search {
+    width: 250px;
+    height: 40px;
+    float: left;
+    padding-left: 50px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.d-flex__textobusqueda .icon {
+    position: absolute;
+    top: 10%;
+    margin-left: 17px;
+    margin-top: 7px;
+    z-index: 1;
+}
+
+.iconbusqueda {
+    width: 25px;
+}
+
+.logomoda {
+    width: 50px;
+    margin: 10px;
+}
+.header__grid {
+    background: linear-gradient(to right, darkorchid, deeppink);
+    height: 90%;
+    grid-area: header__grid;
+}
+
+.menu__grid {
+    grid-area: menu__grid;
+}
+.barradelivery__flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+}
+
+
+.img__delivery {
+    height: 30px;
+}

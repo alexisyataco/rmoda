@@ -1,0 +1,25 @@
+.envio__flex {
+    display: flex;    
+    justify-content: space-evenly;
+    padding: 2px;
+}
+.envio__flex img {
+    width: 45px;
+    align-items: center;
+    padding: 4px;
+}
+
+.card {
+    align-items: center;
+}
+.card-body {
+    padding: 4px !important;
+    text-align: center;
+}
+
+.card {
+    margin: 8px !important;
+}
+.card-img-top {
+    width: 50px;
+}
