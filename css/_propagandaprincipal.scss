@@ -1,4 +1,11 @@
 /*propaganda principal*/
+@mixin mixin_propaganda($top,$left,$font-size) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    padding: 15px;
+    font-size: $font-size;
+}
 
 .propaganda__grid img {
     width: 100%;
@@ -10,16 +17,10 @@
     text-align: center;
 }
 .texto__propaganda-2 {
-    position: absolute;
-    top: 40%;
-    left: 45%;
     transform: translate(-50%, -50%);
-    font-size: xx-large;
+    @include mixin_propaganda(40%,45%,30px)
 }
 .texto__propaganda-1 {
-    position: absolute;
-    top: 50%;
-    left: 48%;
-    padding: 15px;
-    font-size: 15px;
+    @include mixin_propaganda(50%,48%,15px)
+
 }

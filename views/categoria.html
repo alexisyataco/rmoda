@@ -11,7 +11,6 @@
   <meta name="language" content="es-PE">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/query.css">
-  <link rel="stylesheet" href="../css/estilos.css">
   <link rel="stylesheet" href="../css/animaciones.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +24,10 @@
 </head>
 
 <body>
-  <div class="content__grid">
-    
-     <!--CABECERA DE BARRA DE DELIVERY/ -->
-     <header class="header__grid">
+  <div class="content__grid__categorias">
+
+    <!--CABECERA DE BARRA DE DELIVERY/ -->
+    <header class="header__grid">
       <div class="header__barradelivery barradelivery__flex">
         <div class="header__barradelivery__textodelivery-1">
           <h2><a class="textodelivery-1" href="index.html"> Delivery 24Horas </a><img class="img__delivery"
@@ -51,13 +50,16 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a> </li>
-                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./marcas.html">Marcas</a></li>
-                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./promociones.html">Promociones</a> </li>
-                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./categoria.html">Categoria</a></li>
-                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./moda.html">Nosotros</a> </li>
-                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./Contacto.html">Contáctanos</a></li>
-              </ul>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a> </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./marcas.html">Marcas</a></li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page"
+                  href="./promociones.html">Promociones</a> </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./categoria.html">Categoria</a>
+              </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./moda.html">Nosotros</a> </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page"
+                  href="index.html">Contáctanos</a></li>
+            </ul>
             <form class="d-flex" role="search">
               <div class="d-flex__textobusqueda">
                 <img src="https://img.icons8.com/small/16/000000/search--v1.png" class="iconbusqueda icon" />
@@ -69,90 +71,391 @@
         </div>
       </nav>
     </section>
-   
- <!-- baner de categortias-->
-    <section class="titulocategorias__grid">
 
-      <h2> <img src="../Assets/Iconos/img/categorias.png" /> Nuestras Categorias</h2>
-    </section>
- <!-- area de categortias-->
-    <section class="catego__grid">
-      <div class="catego__grid__grid">
-        <div class="item1">
-          <a href=""><img src="../Assets/Img/item_1.png" alt=""></a>
-        </div>
-        <div class="item2">
-          <a href=""><img src="../Assets/Img/item_2.png" alt=""></a>
-        </div>
-        <div class="item3">
-          <a href=""><img src="../Assets/Img/item_3.png" alt=""></a>
-        </div>
-        <div class="item4">
-          <a href=""><img src="../Assets/Img/item_4.png" alt=""></a>
-        </div>
-        <div class="item5">
-          <a href=""><img src="../Assets/Img/item_5.png" alt=""></a>
-        </div>
-        <div class="item6">
-          <a href=""> <img src="../Assets/Img/item_6.png" alt=""></a>
-        </div>
-        <div class="item7">
-          <a href=""><img src="../Assets/Img/item_7.png" alt=""></a>
-        </div>
-        <div class="item8">
-          <a href=""><img src="../Assets/Img/item_8.png" alt=""></a>
-        </div>
-        <div class="item9">
-          <a href=""><img src="../Assets/Img/item_9.png" alt=""></a>
-        </div>
+    <!-- baner -->
+    <section class="propaganda__grid__categorias">
+      <div class="propaganda">
+        <img src="../Assets/Img/categorias/baner-principal.png" />
       </div>
     </section>
- <!-- area de footer-->
-    <footer class="footer__grid">
-      <div class="footer__flex">
-        <div>
-          <h4>Nuestro sitio</h4>
-          <ul class="footer__menu">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./marcas.html">Marcas</a></li>
-            <li><a href="./promociones.html">Promociones</a></li>
-            <li><a href="./categoria.html">Categoria</a></li>
-            <li><a href="./moda.html">Moda</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Sobre Moda</h4>
-          <ul class="footer__menu">
-            <li><a href="#">¿Cómo comprar en Moda.com?</a></li>
-            <li><a href="#">Guía de Compra</a></li>
-            <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="#">Cambios y Devoluciones</a></li>
-            <li><a href="#">Base Legales</a></li>
-            <li><a href="#">Seguridad y Privacidad</a></li>
-            <li><a href="#">Seguimiento de Delivery</a></li>
-            <li><a href="#">Politicas de Datos</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Más de Moda</h4>
-          <ul class="footer__menu">
-            <li><a href="#">Tipos de Pago</a></li>
-            <li><a href="#">¿Quienes Somos?</a></li>
-            <li><a href="#">Nuestra Tiendas Virtual</a></li>
-            <li><a href="#">Trabaja con Nosotros</a></li>
-            <li><a href="#">comprobantes Electrónicos</a></li>
-            <li><a href="#">Reporte de sostenibilidad</a></li>
-            <li><a href="#">Libro de Reclamaciones</a></li>
-            <li><a href="#">Reclamos</a></li>
-          </ul>
-        </div>
-      </div>
-      <p><a href="#arriba" class="enlace">Subir</a></p>
-      <div class="footer__creditos">
-        2022 &copy; Moda R, Elabroado por Luis Yataco - CoderHouse
-      </div>
 
-    </footer>
+    <article class="article__grid__categorias"">
+      <div class=" filtro__flex">
+      <section class="filtro_marca" id="filtro_espacio">
+
+        <div class="accordion" id="accordionPanelsStayOpen_filtro">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+                <h5>Marca</h5>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> ADIDAS</label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> VENUS</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">NIKE</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">REEBOK</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">UMBRO</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">SKECHERS</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">PUMA</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">OLYMPIKUS</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">NORTH STAR</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseTwo">
+                <h5>Genero</h5>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">MUJER</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">HOMBRE</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">NIÑO</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">NIÑA</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">UNISEX</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseThree">
+                <h5>Fit</h5>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">RELAX</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">SLIM</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">CONFORT</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">CLASICO</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">REGULAR</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-heading_talla">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse_talla" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapse_talla">
+                <h5>Talla</h5>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapse_talla" class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-heading_talla">
+              <div class="accordion-body">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">2</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">4</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">6</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">8</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">10</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">12</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">14</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">16</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">XS</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">S</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">M</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">L</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">XL</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">XXL</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">26</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">28</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">30</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">32</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">34</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">36</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-heading_tipo">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse_tipo" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapse_tipo">
+                <h5>Tipo</h5>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapse_tipo" class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-heading_tipo">
+              <div class="accordion-body">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">UNISEX</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">POLO</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">BLUSA</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">SHORTS</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">PANTALON</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">VESTIDO</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">CHOMPAS</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">MEDIAS</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">FALDAS</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">POLERAS</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">ROPA INTERIOR</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">ROPA DE BAÑO</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">PIJAMA</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">JEANS</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">CALZADO</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-heading_precio">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse_precio" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapse_precio">
+                <h5>Precio</h5>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapse_precio" class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-heading_precio">
+              <div class="accordion-body">
+                <label for="precio_rango" class="form-label">Rango de precio</label>
+                <input type="range" class="form-range" id="precio_rango" min="1" max="20000" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </section>
+
+  </div>
+  </article>
+  <aside class="aside__grid__categorias">
+    <div class="aside__flex">
+      <div>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <option selected>Ordenar por</option>
+          <option value="1">mayor a menor</option>
+          <option value="2">menor a mayor</option>
+        </select>
+      </div>
+      <div>
+        <h4>"se encontraron 987 resultados"</h4>
+      </div>
+    </div>
+  </aside>
+  <!-- area de footer-->
+  <footer class="footer__grid">
+    <div class="footer__flex">
+      <div>
+        <h4>Nuestro sitio</h4>
+        <ul class="footer__menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./marcas.html">Marcas</a></li>
+          <li><a href="./promociones.html">Promociones</a></li>
+          <li><a href="./categoria.html">Categoria</a></li>
+          <li><a href="./moda.html">Moda</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sobre Moda</h4>
+        <ul class="footer__menu">
+          <li><a href="#">¿Cómo comprar en Moda.com?</a></li>
+          <li><a href="#">Guía de Compra</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Cambios y Devoluciones</a></li>
+          <li><a href="#">Base Legales</a></li>
+          <li><a href="#">Seguridad y Privacidad</a></li>
+          <li><a href="#">Seguimiento de Delivery</a></li>
+          <li><a href="#">Politicas de Datos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Más de Moda</h4>
+        <ul class="footer__menu">
+          <li><a href="#">Tipos de Pago</a></li>
+          <li><a href="#">¿Quienes Somos?</a></li>
+          <li><a href="#">Nuestra Tiendas Virtual</a></li>
+          <li><a href="#">Trabaja con Nosotros</a></li>
+          <li><a href="#">comprobantes Electrónicos</a></li>
+          <li><a href="#">Reporte de sostenibilidad</a></li>
+          <li><a href="#">Libro de Reclamaciones</a></li>
+          <li><a href="#">Reclamos</a></li>
+        </ul>
+      </div>
+    </div>
+    <p><a href="#arriba" class="enlace">Subir</a></p>
+    <div class="footer__creditos">
+      2022 &copy; Moda R, Elabroado por Luis Yataco - CoderHouse
+    </div>
+
+  </footer>
   </div>
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

@@ -1,0 +1,15 @@
+
+$barra_black: black;
+$barra_morado: rebeccapurple;
+$texto-blanco: white;
+
+.titulocategorias__grid {
+    grid-area: titulocategorias__grid;
+    background: $barra_black;
+    color: $texto-blanco;
+}
+.titulomarcas__grid {
+    grid-area: titulomarcas__grid;
+    background: $barra_morado;
+    color: $texto-blanco;
+}

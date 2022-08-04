@@ -36,8 +36,6 @@
   height: 40px;
   float: left;
   padding-left: 50px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
 }
 
@@ -119,8 +117,6 @@
 
 .titulocategorias__grid {
   grid-area: titulocategorias__grid;
-  background: black;
-  color: white;
 }
 
 .titulocategorias__grid img {
@@ -149,8 +145,6 @@
 
 .titulomarcas__grid {
   grid-area: titulomarcas__grid;
-  background: rebeccapurple;
-  color: white;
 }
 
 .titulomarcas__grid img {
@@ -243,11 +237,12 @@
 }
 
 .texto__propaganda-2 {
+  transform: translate(-50%, -50%);
   position: absolute;
   top: 40%;
   left: 45%;
-  transform: translate(-50%, -50%);
-  font-size: xx-large;
+  padding: 15px;
+  font-size: 30px;
 }
 
 .texto__propaganda-1 {
@@ -286,7 +281,7 @@
 .footer__menu a {
   color: white;
   text-decoration: none;
-  padding: 1rem;
+  padding: 0.5;
 }
 
 .footer__creditos {
@@ -295,9 +290,69 @@
   color: chartreuse;
 }
 
+.titulocategorias__grid {
+  grid-area: titulocategorias__grid;
+  background: black;
+  color: white;
+}
+
+.titulomarcas__grid {
+  grid-area: titulomarcas__grid;
+  background: rebeccapurple;
+  color: white;
+}
+
+.content__grid__categorias {
+  display: grid;
+  grid-template-areas: "header__grid header__grid" "menu__grid menu__grid" "propaganda__grid__categorias propaganda__grid__categorias" "article__grid__categorias aside__grid__categorias" "footer__grid footer__grid";
+  grid-template-rows: 45px 70px auto auto auto;
+  background: white;
+  grid-template-columns: 25% 75%;
+  grid-column-gap: 20px;
+}
+
+.propaganda__grid__categorias {
+  grid-area: propaganda__grid__categorias;
+  background-color: aqua;
+}
+
+.article__grid__categorias {
+  grid-area: article__grid__categorias;
+  margin: 30px;
+  margin-top: 30px;
+}
+
+.aside__grid__categorias {
+  grid-area: aside__grid__categorias;
+  margin-top: 30px;
+}
+
+.propaganda__grid__categorias img {
+  width: 100%;
+  height: 90%;
+}
+
+.filtro__flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-between;
+}
+
+.aside__flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.form-check {
+  margin-top: 10px !important;
+  margin: 10px;
+}
+
 * {
   padding: 0;
   margin: 0;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
