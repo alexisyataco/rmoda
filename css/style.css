@@ -36,6 +36,8 @@
   height: 40px;
   float: left;
   padding-left: 50px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
 }
 
@@ -355,4 +357,6 @@
 * {
   padding: 0;
   margin: 0;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
