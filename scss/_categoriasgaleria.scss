@@ -1,0 +1,90 @@
+/*AREA DE GALERIA EN EN CATEGORIAS*/
+.galeria__grid {
+    display: grid;
+    grid-area: galeria__grid;
+}
+/*DIMENSIONES DE LA PROPAGANDA CATEGORIAS*/
+.propaganda__grid__categorias img {
+    width: 100%;
+    height: 90%;
+}
+/*MARGEN DE IMAGENES DE LA GALERIA EN CATEGORIAS*/
+.galeria__categoria img {
+    width: 100%;
+    margin: 10px;
+}
+/*ANIMACIÓN DE LA IMAGEN DE GALERIA EN CATEGORIAS*/
+.galeria__categoria img:hover {
+    border: 5px solid #f7f7f7;
+}
+/*TIPO DE LETRA DE TECTO RESULTADOS EN CATEGORIAS*/
+#lbl__resultadoproductos {
+    font-style: italic;
+    text-align: right;
+}
+/*FLEX ENTRE TEXTO RESULTADO Y CBO ORDENAR EN CATEGORIAS*/
+.orderby__flex{
+    display: flex;
+    justify-content: space-between;
+}
+/*TEXTO ENCIMA DE LA IMAGEN DE GALERIA EN CATEGORIAS*/
+.texto-encima{
+    position: absolute;
+    right: 1px;
+    background-color:rgba(231, 56, 56, 0.911);
+    color: white;
+    font-weight: bold;
+    top: 2px;
+    margin: 5px;
+    font-size: 12px;
+}
+/*GALERIA EN COLUMNAS EN CATEGORIAS*/
+.galeria__categoria .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5%;
+}
+/*TEXTO CENTRADO ENCIMA DE LA IMAGEN EN CATEGORIAS*/
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*TEXTO PRODUCTO DE LA IMAGEN EN CATEGORIAS*/
+.titulo_producto{
+    font-size: 16px;
+}
+/*TEXTO PRECIO DE LA IMAGEN EN CATEGORIAS*/
+.titulo_precio{
+    font-size: 20px;
+    word-spacing: 52pt; 
+}
+/*TEXTO PRECIO ONLINE DE LA IMAGEN EN CATEGORIAS*/
+.titulo_online{
+    font-size: 20px;
+    color: red;
+    word-spacing: 50pt; 
+}
+/*FORMATO DE TEXTO DE IMAGENES EN CATEGORIAS*/
+.texto{
+    position: relative;
+}
+/*FORMATO DE TEXTO DE IMAGENES EN CATEGORIAS*/
+.texto .titulo_marca{
+    font-size: 100%;
+    color: dimgray;
+    margin: 10px;
+}
+/*FORMATO DE TEXTO DE IMAGENES EN CATEGORIAS*/
+.texto .titulo_producto, .titulo_producto, .titulo_precio{
+    font-size: 100%;
+    color: rgb(15, 15, 15);
+    margin: 10px;
+}
+/*FORMATO DE TEXTO DE IMAGENES EN CATEGORIAS*/
+.texto .titulo_online{
+    font-size: 100%;
+    color:red;
+    margin: 10px;
+}

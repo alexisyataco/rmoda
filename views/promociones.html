@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,117 +10,165 @@
   <meta name="language" content="es-PE">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/query.css">
-  <link rel="stylesheet" href="../css/estilos.css">
   <link rel="stylesheet" href="../css/animaciones.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
   <!-- bootstrap CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="../scss/custom.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <meta name="author" content="R-Moda">
   <title>R-Moda.pe ¡Las mejores ofertas en miles de productos de Moda!</title>
 </head>
 
 <body>
-  <div class="content__grid">
-    
-    <!--CABECERA DE BARRA DE DELIVERY/ -->
-    <header class="header__grid">
-      <div class="header__barradelivery barradelivery__flex">
-        <div class="header__barradelivery__textodelivery-1">
-          <h2><a class="textodelivery-1" href="index.html"> Delivery 24Horas </a><img class="img__delivery"
-              src="../Assets/Iconos/img/clock.png" /></h2>
-        </div>
-        <div class="header__barradelivery__textodelivery-2">
-          <h2><a class="textodelivery-2" href="index.html"> por compras mayores de $100.00</a></h2>
-        </div>
+  <!--CABECERA-->
+  <header class="header__grid">
+    <div class="header__barradelivery barradelivery__flex">
+      <div class="header__barradelivery__textodelivery-1">
+        <h1><a class="textodelivery-1" href="index.html"> Delivery 24Horas </a><img class="img__delivery"
+            src="../Assets/Iconos/img/clock.png" /></h1>
       </div>
-    </header>
+      <div class="header__barradelivery__textodelivery-2">
+        <h2><a class="textodelivery-2" href="index.html"> por compras mayores de $100.00</a></h2>
+      </div>
+    </div>
     <!-- MENU LOGO/NAV/TEXTO-->
     <section class="menu__grid">
-        <nav class="navbar navbar-expand-lg bg-light">
-          <div class="container-fluid">
-            <h1 class="texto__logomoda"><img src="../Assets/Img/logomoda.png" alt="" class="logomoda" /></h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a> </li>
-                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./marcas.html">Marcas</a></li>
-                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./promociones.html">Promociones</a> </li>
-                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./categoria.html">Categoria</a></li>
-                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./moda.html">Nosotros</a> </li>
-                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="../index.html">Contáctanos</a></li>
-                  </ul>
-              <form class="d-flex" role="search">
-                <div class="d-flex__textobusqueda">
-                  <img src="https://img.icons8.com/small/16/000000/search--v1.png" class="iconbusqueda icon" />
-                  <input type="search" class="form-control" list="datalistOptions" id="search"
-                    placeholder="Búsqueda..." />
-                </div>
-              </form>
-            </div>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <h1 class="texto__logomoda"><img src="../Assets/Img/logomoda.png" alt="" class="logomoda" /></h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./marca.html">Marcas</a>
+              </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page"
+                  href="./promociones.html">Promociones</a> </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./categoria.html">Categoria</a>
+              </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./moda.html">Nosotros</a>
+              </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="../index.html">Contáctanos</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <div class="d-flex__textobusqueda">
+                <img src="https://img.icons8.com/small/16/000000/search--v1.png" class="iconbusqueda icon" />
+                <input type="search" class="form-control" list="datalistOptions" id="search"
+                  placeholder="Búsqueda..." />
+              </div>
+            </form>
           </div>
-        </nav>
-      </section>
-   
- 
- <!-- area de footer-->
-    <footer class="footer__grid">
-      <div class="footer__flex">
-        <div>
-          <h4>Nuestro sitio</h4>
-          <ul class="footer__menu">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./marcas.html">Marcas</a></li>
-            <li><a href="./promociones.html">Promociones</a></li>
-            <li><a href="./categoria.html">Categoria</a></li>
-            <li><a href="./moda.html">Moda</a></li>
-          </ul>
         </div>
-        <div>
-          <h4>Sobre Moda</h4>
-          <ul class="footer__menu">
-            <li><a href="#">¿Cómo comprar en Moda.com?</a></li>
-            <li><a href="#">Guía de Compra</a></li>
-            <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="#">Cambios y Devoluciones</a></li>
-            <li><a href="#">Base Legales</a></li>
-            <li><a href="#">Seguridad y Privacidad</a></li>
-            <li><a href="#">Seguimiento de Delivery</a></li>
-            <li><a href="#">Politicas de Datos</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Más de Moda</h4>
-          <ul class="footer__menu">
-            <li><a href="#">Tipos de Pago</a></li>
-            <li><a href="#">¿Quienes Somos?</a></li>
-            <li><a href="#">Nuestra Tiendas Virtual</a></li>
-            <li><a href="#">Trabaja con Nosotros</a></li>
-            <li><a href="#">comprobantes Electrónicos</a></li>
-            <li><a href="#">Reporte de sostenibilidad</a></li>
-            <li><a href="#">Libro de Reclamaciones</a></li>
-            <li><a href="#">Reclamos</a></li>
-          </ul>
-        </div>
-      </div>
-      <p><a href="#arriba" class="enlace">Subir</a></p>
-      <div class="footer__creditos">
-        2022 &copy; Moda R, Elabroado por Luis Yataco - CoderHouse
-      </div>
+      </nav>
+    </section>
+  </header>
 
-    </footer>
-  </div>
+  <!-- MAIN -->
+  <main class="content__grid__categorias">
+    <!-- PROPAGANDA PRINCIPAL -->
+    <section class="propaganda__grid__categorias">
+      <div class="propaganda">
+        <img src="../Assets/Img/categorias/baner-principal.png" class="propaganda-1000px" />
+        <img src="../Assets/Img/categorias/baner-principal-movil.png" class="propaganda-600px" />
+      </div>
+    </section>
+    <!-- GALERIA Y FILTRO -->
+  
+       <!-- area de categortias-->
+    <section class="catego__grid">
+      <div class="catego__grid__grid">
+        <div class="item1">
+          <a href=""><img src="../Assets/Img/item_1.png" alt=""></a>
+        </div>
+        <div class="item2">
+          <a href=""><img src="../Assets/Img/item_2.png" alt=""></a>
+        </div>
+        <div class="item3">
+          <a href=""><img src="../Assets/Img/item_3.png" alt=""></a>
+        </div>
+        <div class="item4">
+          <a href=""><img src="../Assets/Img/item_4.png" alt=""></a>
+        </div>
+        <div class="item5">
+          <a href=""><img src="../Assets/Img/item_5.png" alt=""></a>
+        </div>
+        <div class="item6">
+          <a href=""> <img src="../Assets/Img/item_6.png" alt=""></a>
+        </div>
+        <div class="item7">
+          <a href=""><img src="../Assets/Img/item_7.png" alt=""></a>
+        </div>
+        <div class="item8">
+          <a href=""><img src="../Assets/Img/item_8.png" alt=""></a>
+        </div>
+        <div class="item9">
+          <a href=""><img src="../Assets/Img/item_9.png" alt=""></a>
+        </div>
+      </div>
+    </section>
+      
+
+  </main>
+
+  <!-- FOOTER-->
+  <footer class="footer__grid">
+    <div class="footer__flex">
+      <div>
+        <h4>Nuestro sitio</h4>
+        <ul class="footer__menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./marca.html">Marcas</a></li>
+          <li><a href="./promociones.html">Promociones</a></li>
+          <li><a href="./categoria.html">Categoria</a></li>
+          <li><a href="./moda.html">Moda</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sobre Moda</h4>
+        <ul class="footer__menu">
+          <li><a href="#">¿Cómo comprar en Moda.com?</a></li>
+          <li><a href="#">Guía de Compra</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Cambios y Devoluciones</a></li>
+          <li><a href="#">Base Legales</a></li>
+          <li><a href="#">Seguridad y Privacidad</a></li>
+          <li><a href="#">Seguimiento de Delivery</a></li>
+          <li><a href="#">Politicas de Datos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Más de Moda</h4>
+        <ul class="footer__menu">
+          <li><a href="#">Tipos de Pago</a></li>
+          <li><a href="#">¿Quienes Somos?</a></li>
+          <li><a href="#">Nuestra Tiendas Virtual</a></li>
+          <li><a href="#">Trabaja con Nosotros</a></li>
+          <li><a href="#">comprobantes Electrónicos</a></li>
+          <li><a href="#">Reporte de sostenibilidad</a></li>
+          <li><a href="#">Libro de Reclamaciones</a></li>
+          <li><a href="#">Reclamos</a></li>
+        </ul>
+      </div>
+    </div>
+    <p><a href="#arriba" class="enlace">Subir</a></p>
+    <div class="footer__creditos">
+      2022 &copy; Moda R, Elabroado por Luis Yataco - CoderHouse
+    </div>
+
+  </footer>
+
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-</body>
 
+</body>
 </html>

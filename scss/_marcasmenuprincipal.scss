@@ -1,0 +1,25 @@
+/*GRID DE MARCAS EN MARCAS*/
+.content__grid__marcas {
+    display: grid;
+    grid-template-areas:
+        "propaganda__grid__marcas"
+        "logos__grid__marcas";
+    grid-template-rows: auto auto;
+    background: white;
+    grid-template-columns: 100%;
+    grid-column-gap: 15px;
+}
+/*AREA GRID DE PROPAGANDA*/
+.propaganda__grid__marcas{
+    grid-area: propaganda__grid__marcas;
+}
+/*AREA GRID DE LOGOS*/
+.logos__grid__marcas{
+    grid-area: logos__grid__marcas;
+}
+/*DIMENSIONES DE LA PROPAGANDA CATEGORIAS*/
+.propaganda__grid__marcas img {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+}

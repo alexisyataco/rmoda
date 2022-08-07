@@ -1,46 +1,45 @@
-/*BLOQUE 1 BANNER DELIVERY-NAV MENU*/
-
+/*MIXIN FORMATO TEXTO DEL DELIVERY*/
 @mixin texto_estilo($tamaño_texto) {
     font-size: $tamaño_texto;
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
+/*USO MIXIN FORMATO TEXTO DEL DELIVERY*/
 .textodelivery-1 {
     @include texto_estilo(26px);
 }
-
+/*USO MIXIN FORMATO TEXTO DEL DELIVERY*/
 .textodelivery-2 {
     @include texto_estilo(24px);
 }
-
+/*GRID DE AREAS DEL INDEX*/
 .content__grid {
     display: grid;
     grid-template-areas:
-        "header__grid"
-        "menu__grid"
         "carrusel__grid"
         "envio__grid"
         "titulocategorias__grid"
         "catego__grid"
         "propaganda__grid"
         "titulomarcas__grid"
-        "marcas__grid"
-        "footer__grid";
-    grid-template-rows: 45px 70px auto auto auto auto auto auto auto auto;
+        "marcas__grid";
+    grid-template-rows:repeat(8, auto);
+    grid-template-columns: 100%;
     background: white;
 }
+/*BLOQUE DE NAV SE MUESTRE ENCIMA DEL CONTENIDO EN INDEX*/
 .navbar {
     z-index: 1000;
 }
-
+/*FLEX FORMATO EN EL TEXTO DE BUSQUEDA*/
 .d-flex__textobusqueda {
     width: auto;
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
 }
-
+/*POSICION DEL TEXTO DE BUSQUEDA*/
 .d-flex__textobusqueda input#search {
     width: 250px;
     height: 40px;
@@ -50,7 +49,7 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
-
+/*POSICION DEL ICON DE BUSQUEDA DE BUSQUEDA*/
 .d-flex__textobusqueda .icon {
     position: absolute;
     top: 10%;
@@ -58,24 +57,26 @@
     margin-top: 7px;
     z-index: 1;
 }
-
+/*DIMENSIÓN DEL ICON DE BUSQUEDA DEL NAV*/
 .iconbusqueda {
     width: 25px;
 }
-
+/*DIMENSIÓN DEL LOGO DE BUSQUEDA DEL NAV*/
 .logomoda {
     width: 50px;
     margin: 10px;
 }
+/*AREA GRID DEL BARRA DE DELIVERY */
 .header__grid {
     background: linear-gradient(to right, darkorchid, deeppink);
     height: 90%;
     grid-area: header__grid;
 }
-
+/*AREA GRID DEL NAV DE DELIVERY */
 .menu__grid {
     grid-area: menu__grid;
 }
+/*FLEX DEL BARRA DE DELIVERY */
 .barradelivery__flex {
     display: flex;
     flex-wrap: nowrap;
@@ -83,7 +84,12 @@
     flex-direction: row;
     align-content: center;
 }
-
+/*DIMENSIÓN DEL RELOJ DE LA BARRA DE DELIVERY */
 .img__delivery {
     height: 30px;
+}
+/*MARGENES PARA TODO */
+*{
+    padding: 0;
+    margin: 0;
 }

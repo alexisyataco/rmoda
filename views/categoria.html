@@ -9,6 +9,7 @@
   <meta name="country" content="PER">
   <meta name="currency" content="S/.">
   <meta name="language" content="es-PE">
+
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/query.css">
   <link rel="stylesheet" href="../css/animaciones.css">
@@ -16,28 +17,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
   <!-- bootstrap CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="../scss/custom.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <meta name="author" content="R-Moda">
   <title>R-Moda.pe ¡Las mejores ofertas en miles de productos de Moda!</title>
 </head>
 
 <body>
-  <div class="content__grid__categorias">
-
-    <!--CABECERA DE BARRA DE DELIVERY/ -->
-    <header class="header__grid">
-      <div class="header__barradelivery barradelivery__flex">
-        <div class="header__barradelivery__textodelivery-1">
-          <h2><a class="textodelivery-1" href="index.html"> Delivery 24Horas </a><img class="img__delivery"
-              src="../Assets/Iconos/img/clock.png" /></h2>
-        </div>
-        <div class="header__barradelivery__textodelivery-2">
-          <h2><a class="textodelivery-2" href="index.html"> por compras mayores de $100.00</a></h2>
-        </div>
+  <!--CABECERA-->
+  <header class="header__grid">
+    <div class="header__barradelivery barradelivery__flex">
+      <div class="header__barradelivery__textodelivery-1">
+        <h2><a class="textodelivery-1" href="../Index.htm"> Delivery 24Horas </a><img class="img__delivery"
+            src="../Assets/Iconos/img/clock.png" /></h2>
       </div>
-    </header>
+      <div class="header__barradelivery__textodelivery-2">
+        <h2><a class="textodelivery-2" href="../Index.htm"> por compras mayores de $100.00</a></h2>
+      </div>
+    </div>
     <!-- MENU LOGO/NAV/TEXTO-->
     <section class="menu__grid">
       <nav class="navbar navbar-expand-lg bg-light">
@@ -50,15 +47,18 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a> </li>
-              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./marcas.html">Marcas</a></li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./marca.html">Marcas</a>
+              </li>
               <li class="nav-item"> <a class="nav-link active" aria-current="page"
                   href="./promociones.html">Promociones</a> </li>
               <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./categoria.html">Categoria</a>
               </li>
-              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./moda.html">Nosotros</a> </li>
-              <li class="nav-item"> <a class="nav-link active" aria-current="page"
-                  href="../index.html">Contáctanos</a></li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./moda.html">Nosotros</a>
+              </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="../index.html">Contáctanos</a>
+              </li>
             </ul>
             <form class="d-flex" role="search">
               <div class="d-flex__textobusqueda">
@@ -71,27 +71,30 @@
         </div>
       </nav>
     </section>
+  </header>
 
-    <!-- baner -->
+  <!-- MAIN -->
+  <main class="content__grid__categorias">
+    <!-- PROPAGANDA PRINCIPAL -->
     <section class="propaganda__grid__categorias">
       <div class="propaganda">
-        <img src="../Assets/Img/categorias/baner-principal.png" />
+        <img src="../Assets/Img/categorias/baner-principal.png" class="propaganda-1000px" />
+        <img src="../Assets/Img/categorias/baner-principal-movil.png" class="propaganda-600px" />
       </div>
     </section>
-
-    <article class="article__grid__categorias"">
-      <div class=" filtro__flex">
-      <section class="filtro_marca" id="filtro_espacio">
-
+    <!-- GALERIA Y FILTRO -->
+    <section class="galeria__grid">
+      <!-- FILTRO -->
+      <section class="aside__filtro__grid">
         <div class="accordion" id="accordionPanelsStayOpen_filtro">
           <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <h1 class="accordion-header" id="panelsStayOpen-headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                 aria-controls="panelsStayOpen-collapseOne">
                 <h5>Marca</h5>
               </button>
-            </h2>
+            </h1>
             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
               aria-labelledby="panelsStayOpen-headingOne">
               <div class="accordion-body">
@@ -136,14 +139,14 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <h1 class="accordion-header" id="panelsStayOpen-headingTwo">
               <button class="accordion-button" type="button" data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
                 aria-controls="panelsStayOpen-collapseTwo">
                 <h5>Genero</h5>
               </button>
-            </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+            </h1>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
               aria-labelledby="panelsStayOpen-headingTwo">
               <div class="accordion-body">
 
@@ -171,14 +174,14 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <h1 class="accordion-header" id="panelsStayOpen-headingThree">
               <button class="accordion-button" type="button" data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
                 aria-controls="panelsStayOpen-collapseThree">
                 <h5>Fit</h5>
               </button>
-            </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
+            </h1>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
               aria-labelledby="panelsStayOpen-headingThree">
               <div class="accordion-body">
                 <div class="form-check">
@@ -205,14 +208,14 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-heading_talla">
+            <h1 class="accordion-header" id="panelsStayOpen-heading_talla">
               <button class="accordion-button" type="button" data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapse_talla" aria-expanded="true"
                 aria-controls="panelsStayOpen-collapse_talla">
                 <h5>Talla</h5>
               </button>
-            </h2>
-            <div id="panelsStayOpen-collapse_talla" class="accordion-collapse collapse show"
+            </h1>
+            <div id="panelsStayOpen-collapse_talla" class="accordion-collapse collapse"
               aria-labelledby="panelsStayOpen-heading_talla">
               <div class="accordion-body">
                 <div class="form-check">
@@ -299,14 +302,14 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-heading_tipo">
+            <h1 class="accordion-header" id="panelsStayOpen-heading_tipo">
               <button class="accordion-button" type="button" data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapse_tipo" aria-expanded="true"
                 aria-controls="panelsStayOpen-collapse_tipo">
                 <h5>Tipo</h5>
               </button>
-            </h2>
-            <div id="panelsStayOpen-collapse_tipo" class="accordion-collapse collapse show"
+            </h1>
+            <div id="panelsStayOpen-collapse_tipo" class="accordion-collapse collapse"
               aria-labelledby="panelsStayOpen-heading_tipo">
               <div class="accordion-body">
                 <div class="form-check">
@@ -373,14 +376,14 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-heading_precio">
+            <h1 class="accordion-header" id="panelsStayOpen-heading_precio">
               <button class="accordion-button" type="button" data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapse_precio" aria-expanded="true"
                 aria-controls="panelsStayOpen-collapse_precio">
                 <h5>Precio</h5>
               </button>
-            </h2>
-            <div id="panelsStayOpen-collapse_precio" class="accordion-collapse collapse show"
+            </h1>
+            <div id="panelsStayOpen-collapse_precio" class="accordion-collapse collapse"
               aria-labelledby="panelsStayOpen-heading_precio">
               <div class="accordion-body">
                 <label for="precio_rango" class="form-label">Rango de precio</label>
@@ -388,36 +391,113 @@
               </div>
             </div>
           </div>
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-outline-success">Buscar productos</button>
+            <button type="button" class="btn btn-outline-danger">Limpiar filtro</button>
+          </div>
+
         </div>
 
-
+      </section>
+      <!-- GALERIA -->
+      <section class="article__galeria__grid">
+        <div class="orderby__flex">
+          <!-- inicio orden-->
+          <div class="orberby">
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg orderby">
+              <option selected>Ordenar por</option>
+              <option value="1">mayor a menor</option>
+              <option value="2">menor a mayor</option>
+            </select>
+          </div>
+          <!-- inicio resultado-->
+          <div>
+            <p id="lbl__resultadoproductos">"se encontraron 987 Productos"</p>
+          </div>
+        </div>
+        <!-- inicio contenedor de galeria-->
+        <div class="galeria__categoria">
+          <div class="row">
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(1).jpg" alt="galeria">
+              <div class="texto-encima">10% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(2).jpg" alt="galeria">
+              <div class="texto-encima">15% Dscto</div>
+              <h1 class="titulo_marca"><a>Adidas</a></h1>
+              <h2 class="titulo_producto"><a>Blusa de mujer blanco</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/70.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/65.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(3).jpg" alt="galeria">
+              <div class="texto-encima">30% Dscto</div>
+              <h1 class="titulo_marca"><a>Index</a></h1>
+              <h2 class="titulo_producto"><a>Casaca Mujer Diana3 Celeste</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/95.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/56.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(4).jpg" alt="galeria">
+              <div class="texto-encima">50% Dscto</div>
+              <h1 class="titulo_marca"><a>Umbro</a></h1>
+              <h2 class="titulo_producto"><a>Short de verano</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/60.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/30.45</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(5).jpg" alt="galeria">
+              <div class="texto-encima">30% Dscto</div>
+              <h1 class="titulo_marca"><a>Index</a></h1>
+              <h2 class="titulo_producto"><a>Chompa Mujer mickey</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/99.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/86.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(6).jpg" alt="galeria">
+              <div class="texto-encima">30% Dscto</div>
+              <h1 class="titulo_marca"><a>Adidas</a></h1>
+              <h2 class="titulo_producto"><a>Casaca Mujer Diana3 Celeste</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/90.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/69.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(7).jpg" alt="galeria">
+              <div class="texto-encima">30% Dscto</div>
+              <h1 class="titulo_marca"><a>Adidas</a></h1>
+              <h2 class="titulo_producto"><a>Casaca Mujer Diana3 Celeste</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/90.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/69.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(8).jpg" alt="galeria">
+              <div class="texto-encima">30% Dscto</div>
+              <h1 class="titulo_marca"><a>Adidas</a></h1>
+              <h2 class="titulo_producto"><a>Casaca Mujer Diana3 Celeste</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/90.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/69.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(9).jpg" alt="galeria">
+              <div class="texto-encima">30% Dscto</div>
+              <h1 class="titulo_marca"><a>Adidas</a></h1>
+              <h2 class="titulo_producto"><a>Casaca Mujer Diana3 Celeste</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/90.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/69.90</a></h3>
+            </div>
+          </div>
+        </div>
+        <!-- fin contenedor de galeria-->
+        </article>
 
       </section>
+    </section>
+  </main>
 
-  </div>
-  </article>
-  <aside class="aside__grid__categorias">
-    <div class="aside__flex">
-      <div>
-        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-          <option selected>Ordenar por</option>
-          <option value="1">mayor a menor</option>
-          <option value="2">menor a mayor</option>
-        </select>
-      </div>
-      <div>
-        <h4>"se encontraron 987 resultados"</h4>
-      </div>
-    </div>
-  </aside>
-  <!-- area de footer-->
+  <!-- FOOTER-->
   <footer class="footer__grid">
     <div class="footer__flex">
       <div>
         <h4>Nuestro sitio</h4>
         <ul class="footer__menu">
           <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./marcas.html">Marcas</a></li>
+          <li><a href="./marca.html">Marcas</a></li>
           <li><a href="./promociones.html">Promociones</a></li>
           <li><a href="./categoria.html">Categoria</a></li>
           <li><a href="./moda.html">Moda</a></li>
@@ -456,11 +536,11 @@
     </div>
 
   </footer>
-  </div>
+
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-</body>
 
+</body>
 </html>

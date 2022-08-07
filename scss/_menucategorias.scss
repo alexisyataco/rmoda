@@ -1,0 +1,30 @@
+/*GRID DE CATEGORIAS EN CATEGORIAS*/
+.content__grid__categorias {
+    display: grid;
+    grid-template-areas:  
+        "propaganda__grid__categorias"
+        "galeria__grid";
+    grid-template-rows: auto auto;
+    background: white;
+    grid-template-columns: 100%;
+    grid-column-gap: 15px;
+}
+/*GRID DE FILTRO Y GALERIA EN CATEGORIAS*/
+.galeria__grid {
+    display: grid;
+    grid-template-areas:
+        "aside__filtro__grid article__galeria__grid";
+    grid-template-rows: auto;
+    background: white;
+    grid-template-columns: 20% 75%;
+    grid-column-gap: 15px;
+    margin-top: 30px;
+    margin: 20px;
+}
+/*AREA DE PROPAGANDA EN CATEGORIAS*/
+.propaganda__grid__categorias {
+    grid-area: propaganda__grid__categorias;
+}
+
+
+
