@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,17 +18,18 @@
   <!-- bootstrap CSS only -->
   <link rel="stylesheet" href="../scss/custom.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <meta name="author" content="R-Moda">
   <title>R-Moda.pe ¡Las mejores ofertas en miles de productos de Moda!</title>
 </head>
 
 <body>
   <!--CABECERA-->
-  <header class="header__grid">
+  <header class="header__grid" id="arriba">
     <div class="header__barradelivery barradelivery__flex">
       <div class="header__barradelivery__textodelivery-1">
         <h1><a class="textodelivery-1" href="index.html"> Delivery 24Horas </a><img class="img__delivery"
-            src="../Assets/Iconos/img/clock.png" /></h1>
+            src="../Assets/Iconos/img/clock.png" alt="descuento" /></h1>
       </div>
       <div class="header__barradelivery__textodelivery-2">
         <h2><a class="textodelivery-2" href="index.html"> por compras mayores de $100.00</a></h2>
@@ -37,7 +39,7 @@
     <section class="menu__grid">
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <h1 class="texto__logomoda"><img src="../Assets/Img/logomoda.png" alt="" class="logomoda" /></h1>
+          <h1 class="texto__logomoda"><img src="../Assets/Img/logomoda.png" alt="logomoda" class="logomoda" /></h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -53,14 +55,14 @@
                   href="./promociones.html">Promociones</a> </li>
               <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./categoria.html">Categoria</a>
               </li>
-              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./moda.html">Nosotros</a>
-              </li>
-              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="../index.html">Contáctanos</a>
+             
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./contacto.html">Contáctanos</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
               <div class="d-flex__textobusqueda">
-                <img src="https://img.icons8.com/small/16/000000/search--v1.png" class="iconbusqueda icon" />
+                <img src="https://img.icons8.com/small/16/000000/search--v1.png" class="iconbusqueda icon"
+                  alt="descuento" />
                 <input type="search" class="form-control" list="datalistOptions" id="search"
                   placeholder="Búsqueda..." />
               </div>
@@ -72,49 +74,510 @@
   </header>
 
   <!-- MAIN -->
-  <main class="content__grid__categorias">
+  <main class="content__grid__promociones">
     <!-- PROPAGANDA PRINCIPAL -->
     <section class="propaganda__grid__categorias">
       <div class="propaganda">
-        <img src="../Assets/Img/categorias/baner-principal.png" class="propaganda-1000px" />
-        <img src="../Assets/Img/categorias/baner-principal-movil.png" class="propaganda-600px" />
+        <img src="../Assets/Img/promociones/publicidad-1000px.png" class="propaganda-1000px" alt="descuento" />
+        <img src="../Assets/Img/promociones/publicidad-600px.png" class="propaganda-600px" alt="descuento" />
       </div>
     </section>
-    <!-- GALERIA Y FILTRO -->
-  
-       <!-- area de categortias-->
-    <section class="catego__grid">
-      <div class="catego__grid__grid">
-        <div class="item1">
-          <a href=""><img src="../Assets/Img/item_1.png" alt=""></a>
-        </div>
-        <div class="item2">
-          <a href=""><img src="../Assets/Img/item_2.png" alt=""></a>
-        </div>
-        <div class="item3">
-          <a href=""><img src="../Assets/Img/item_3.png" alt=""></a>
-        </div>
-        <div class="item4">
-          <a href=""><img src="../Assets/Img/item_4.png" alt=""></a>
-        </div>
-        <div class="item5">
-          <a href=""><img src="../Assets/Img/item_5.png" alt=""></a>
-        </div>
-        <div class="item6">
-          <a href=""> <img src="../Assets/Img/item_6.png" alt=""></a>
-        </div>
-        <div class="item7">
-          <a href=""><img src="../Assets/Img/item_7.png" alt=""></a>
-        </div>
-        <div class="item8">
-          <a href=""><img src="../Assets/Img/item_8.png" alt=""></a>
-        </div>
-        <div class="item9">
-          <a href=""><img src="../Assets/Img/item_9.png" alt=""></a>
+
+    <!-- area de categortias-->
+    <section class="promociones__grid container">
+      <div>
+        <h1 class="display-6">tenemos los mejores
+          <small class="text-muted">descuentos para ti.</small>
+        </h1>
+      </div>
+      <div class="dscto__promociones" id="arriba-menu">
+        <div class="row">
+          <div>
+            <a href="#scroll-1"> <img src="../Assets/Img/promociones/hasta-5.png" class="rounded-circle shadow"
+                data-holder-rendered="true" alt="descuento"></a>
+          </div>
+          <div>
+            <a href="#scroll-2"> <img src="../Assets/Img/promociones/hasta-10.png" class="rounded-circle shadow"
+                data-holder-rendered="true" alt="descuento"></a>
+          </div>
+          <div>
+            <a href="#scroll-3"> <img src="../Assets/Img/promociones/hasta-20.png" class="rounded-circle shadow"
+                data-holder-rendered="true" alt="descuento"></a>
+          </div>
+          <div>
+            <a href="#scroll-4"> <img src="../Assets/Img/promociones/hasta-30.png" class="rounded-circle shadow"
+                data-holder-rendered="true" alt="descuento"></a>
+          </div>
+          <div>
+            <a href="#scroll-5"> <img src="../Assets/Img/promociones/hasta-40.png" class="rounded-circle shadow"
+                data-holder-rendered="true" alt="descuento"></a>
+          </div>
+          <div>
+            <a href="#scroll-6"> <img src="../Assets/Img/promociones/hasta-50.png" class="rounded-circle shadow"
+                data-holder-rendered="true" alt="descuento"></a>
+          </div>
+          <div>
+            <a href="#scroll-7"> <img src="../Assets/Img/promociones/hasta-60.png" class="rounded-circle shadow"
+                data-holder-rendered="true" alt="descuento"></a>
+          </div>
+          <div>
+            <a href="#scroll-8"> <img src="../Assets/Img/promociones/hasta-70.png" class="rounded-circle shadow"
+                data-holder-rendered="true" alt="descuento"></a>
+          </div>
+          <div>
+            <a href="#scroll-9"> <img src="../Assets/Img/promociones/hasta-80.png" class="rounded-circle shadow"
+                data-holder-rendered="true" alt="descuento"></a>
+          </div>
         </div>
       </div>
+      <div data-bs-spy=" scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example rounded-2" tabindex="0">
+        <hr>
+
+        <!-- inicio contenedor de galeria-->
+        <div class="galeria__promociones__scroll">
+          <div class="row" id="scroll-1">
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(1).jpg" class="rounded-3" alt="galeria">
+
+              <div class="texto-encima">4% Dscto</div>
+              <h1 class="titulo_marca"><a>Pionier</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/57.90</a></h3>
+
+            </div>
+
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(2).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">5% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Falda jean</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/99.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/95.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(3).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">5% Dscto</div>
+              <h1 class="titulo_marca"><a>Dior</a></h1>
+              <h2 class="titulo_producto"><a>Chompa oscura</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/89.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/86.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(4).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">5% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Short verano</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(5).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">5% Dscto</div>
+              <h1 class="titulo_marca"><a>Disney</a></h1>
+              <h2 class="titulo_producto"><a>Chompa mickey mouse</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/129.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/118.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(6).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">3% Dscto</div>
+              <h1 class="titulo_marca"><a>Delfina</a></h1>
+              <h2 class="titulo_producto"><a>Pulover</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/89.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/86.90</a></h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <!-- fin contenedor de galeria-->
+        <div class="galeria__promociones__scroll">
+          <div class="row" id="scroll-2">
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(7).jpg" class="rounded-3" alt="galeria">
+
+              <div class="texto-encima">6% Dscto</div>
+              <h1 class="titulo_marca"><a>Roxy</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit mujer</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/159.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/142.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(8).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">8% Dscto</div>
+
+              <h1 class="titulo_marca"><a>Roxy</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit mujer</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/139.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/125.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(9).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">8% Dscto</div>
+              <h1 class="titulo_marca"><a>Adidas</a></h1>
+              <h2 class="titulo_producto"><a>Vestido deportivo</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(10).jpg" class="rounded-3" alt="galeria">
+
+              <div class="texto-encima">8% Dscto</div>
+              <h1 class="titulo_marca"><a>Index</a></h1>
+              <h2 class="titulo_producto"><a>Buzo de mujer</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/69.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(11).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">10% Dscto</div>
+              <h1 class="titulo_marca"><a>Adidas</a></h1>
+              <h2 class="titulo_producto"><a>Shompa de mujer</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/219.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/190.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(12).jpg" class="rounded-3" alt="galeria">
+
+              <div class="texto-encima">10% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Buzo celeste</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/99.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/88.90</a></h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="galeria__promociones__scroll">
+          <div class="row" id="scroll-3">
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(13).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">18% Dscto</div>
+              <h1 class="titulo_marca"><a>Index</a></h1>
+              <h2 class="titulo_producto"><a>Casaca jean mujer</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/259.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/212.90</a></h3>
+
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(14).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">15% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>zapatillas azul</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/359.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/316.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(15).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">15% Dscto</div>
+              <h1 class="titulo_marca"><a>Adidas</a></h1>
+              <h2 class="titulo_producto"><a>zapatillas blanco</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/359.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/316.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(16).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">12% Dscto</div>
+              <h1 class="titulo_marca"><a>Fila</a></h1>
+              <h2 class="titulo_producto"><a>Casaca azul</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/168.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/142.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(17).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">18% Dscto</div>
+              <h1 class="titulo_marca"><a>Moda</a></h1>
+              <h2 class="titulo_producto"><a>Shompa fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/129.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/114.90</a></h3>
+
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(18).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">20% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>zapatillas fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="galeria__promociones__scroll">
+          <div class="row" id="scroll-4">
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(19).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">25% Dscto</div>
+              <h1 class="titulo_marca"><a>Index</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/159.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/102.90</a></h3>
+
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(20).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">25% Dscto</div>
+              <h1 class="titulo_marca"><a>Moda</a></h1>
+              <h2 class="titulo_producto"><a>Short hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/69.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/41.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(21).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">30% Dscto</div>
+              <h1 class="titulo_marca"><a>Moda</a></h1>
+              <h2 class="titulo_producto"><a>Short hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/69.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/41.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(22).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">28% Dscto</div>
+              <h1 class="titulo_marca"><a>Moda</a></h1>
+              <h2 class="titulo_producto"><a>Short hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/99.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/71.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(23).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">26% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(24).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">21% Dscto</div>
+              <h1 class="titulo_marca"><a>Dior</a></h1>
+              <h2 class="titulo_producto"><a>Falda floreada</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/136.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/125.90</a></h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="galeria__promociones__scroll">
+          <div class="row" id="scroll-5">
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(25).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">31% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>falda</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(26).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">40% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Shompa fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(12).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">40% Dscto</div>
+              <h1 class="titulo_marca"><a>Adidas</a></h1>
+              <h2 class="titulo_producto"><a>buzo mujer</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/159.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/142.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(14).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">40% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(5).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">35% Dscto</div>
+              <h1 class="titulo_marca"><a>Disney</a></h1>
+              <h2 class="titulo_producto"><a>Shompa</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/189.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/142.90</a></h3>
+
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(16).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">32% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="galeria__promociones__scroll">
+          <div class="row" id="scroll-6">
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(20).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">41% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(2).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">50% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(13).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">45% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(19).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">42% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(21).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">42% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(2).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">48% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="galeria__promociones__scroll">
+          <div class="row" id="scroll-7">
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(11).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">51% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(21).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">55% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(13).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">55% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(14).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">60% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/95.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/36.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(7).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">60% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/79.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/52.90</a></h3>
+
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(17).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">60% Dscto</div>
+              <h1 class="titulo_marca"><a>Adidas</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/86.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="galeria__promociones__scroll">
+          <div class="row" id="scroll-8">
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(10).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">75% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(24).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">80% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(25).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">80% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(26).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">80% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(1).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">75% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(2).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">72% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="galeria__promociones__scroll">
+          <div class="row" id="scroll-9">
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(10).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">81% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(12).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">85% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(13).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">85% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/59.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(14).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">82% Dscto</div>
+              <h1 class="titulo_marca"><a>Index</a></h1>
+              <h2 class="titulo_producto"><a>Polo fit</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/69.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/12.90</a></h3>
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(15).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">88% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>Jean fit hombre</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/159.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/62.90</a></h3>
+
+            </div>
+            <div class="texto"><img src="../Assets/Img/categorias/item/Item(26).jpg" class="rounded-3" alt="galeria">
+              <div class="texto-encima">83% Dscto</div>
+              <h1 class="titulo_marca"><a>Nike</a></h1>
+              <h2 class="titulo_producto"><a>zapatillas deporte</a></h2>
+              <h3 class="titulo_precio"><a>Precio S/149.90</a></h3>
+              <h3 class="titulo_online"><a>Online S/42.90</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
-      
 
   </main>
 
@@ -128,7 +591,8 @@
           <li><a href="./marca.html">Marcas</a></li>
           <li><a href="./promociones.html">Promociones</a></li>
           <li><a href="./categoria.html">Categoria</a></li>
-          <li><a href="./moda.html">Moda</a></li>
+
+          <li><a href="./contacto.html">Moda</a></li>
         </ul>
       </div>
       <div>
@@ -158,7 +622,9 @@
         </ul>
       </div>
     </div>
-    <p><a href="#arriba" class="enlace">Subir</a></p>
+    <p><a href="#arriba">Subir</a></p>
+    <p><a href="#arriba-menu"> <img src="../Assets/Img/tags.png" alt="" class="ir-arriba"></a></p>
+
     <div class="footer__creditos">
       2022 &copy; Moda R, Elabroado por Luis Yataco - CoderHouse
     </div>
@@ -169,6 +635,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+  <!-- funcion del boton subir -->
 
 </body>
+
 </html>

@@ -13,22 +13,8 @@
 }
 
 @keyframes efecto {
-    /*0% {
-        color: blueviolet
-    }
-    25% {
-        color: blue
-    }
-    50% {
-        color: rgb(55, 37, 71)
-    }
-    75% {
-        color:aqua
-    }
-    100% {
-        color: rgb(46, 102, 185)
-    }*/
 }
+
 
 .header__barradelivery h2:hover{
     display: inline-block;
@@ -53,7 +39,6 @@
     animation-duration: 1s; 
 }
 .carrusel__grid__tarjetas img:hover{
-   /* display: inline-block;*/
     animation: bounce;
     animation-duration: 1s; 
 }
@@ -61,4 +46,27 @@
     display: inline-block;
     animation: pulse;
     animation-duration: 1s; 
+}
+
+.galeria__promociones__scroll img:hover{
+    animation: pulse;
+    animation-duration: 1s;
+    
+}
+.dscto__promociones img:hover{
+    animation: pulse;
+    animation-duration: 1s; 
+
+}
+.card:hover{
+    animation: pulse;
+    animation-duration: 1s; 
+
+    
+}
+.card-covid img:hover{
+    animation: pulse;
+    animation-duration: 1s; 
+
+    
 }
