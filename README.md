@@ -1,3 +1,5 @@
-# rmoda#
-<h1>alexis yataco</h1>
-<p> este es un repositorio desde coder house</p>
+## Nombre
+Presento mi proyecto de desarrollo web, con un desarrollo de prendas de vestir de moda.
+
+## Descripción
+
