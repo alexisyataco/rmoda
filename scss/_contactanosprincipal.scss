@@ -1,0 +1,118 @@
+/*GRID DE CONTACTO EN GRID*/
+.content__grid__contacto {
+    display: grid;
+    grid-template-areas:
+        "propaganda__grid__contacto"
+        "grid__contacto"
+        "titulomarcas__grid";
+    grid-template-rows: auto auto;
+    background: white;
+
+    grid-row-gap: 15px;
+}
+
+.propaganda__grid__contacto {
+    grid-area: propaganda__grid__contacto;
+}
+
+.propaganda__grid__contacto img {
+    width: 100%;
+    height: 380px;
+}
+
+.body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.texto_centrado-1 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.texto_centrado-2 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+    font-size: 250%;
+    font-weight: 700;
+}
+
+.texto_centrado-3 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 40% !important;
+}
+
+.texto-titulo {
+    text-align: center;
+    color: rgb(76, 15, 133);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.texto-titulo-card {
+    text-align: left;
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.texto-titulo-card-2 {
+    text-align: left;
+    font-family: 'Signika Negative', sans-serif;
+    color: rgb(74, 33, 121);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.texto-card {
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-weight: 350;
+}
+
+.texto-card-2 {
+    text-align: left;
+    color: rgb(74, 33, 121);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.size-img {
+    width: 50%;
+    height: 50%;
+}
+.col-md-4 {
+    text-align: center !important;
+    padding: 60px;
+}
+.grid__contacto {
+    grid-area: grid__contacto;
+}
+
+/*MAPA GOOGLE*/
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+}
