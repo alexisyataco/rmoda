@@ -14,22 +14,28 @@
   .card {
     align-items: center;
   }
-
   .card h5 {
     font-size: 10px;
   }
-
   .card p {
     display: none;
     font-size: 10px;
   }
-
   .envio__flex img {
     width: 60px;
     align-items: center;
     padding: 0px;
     margin: 0px;
   }
+
+  .card-title {
+    display: inline-block!important;
+  }
+  .card-body p{
+    font-size: 24px!important;
+    text-align: center;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
